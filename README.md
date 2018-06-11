@@ -11,11 +11,15 @@ The code is successfully tested oin Ubuntu 16.04 with NVIDIA GPU GTX 1080 Ti. In
 While we havn't tested this code with other OS systems, we expect it can be runned on any Linux Based OS with a minor adjustment. 
 ## 3. Introduction to the important Program File
 __main.py:__ The main process file to run our neural machine translation model. In main.py, we executed a five-step process: (1) Load the dataset. (2) Define the model and training details. (3) Print out the configuration of the model and the hyperparameter setting for training. (4) Train the Model (5) Evaluate the best saved model on the test dataset. 
+
 __preprocess.py:__ The program file that defines a set of functions that has been applied to load the data and prepare the batches for neural network.
-__NMT_Seq2Seq.py:__ The model file that defines the Sequence to Sequence Model and the beamsearch decoding process. 
+
+__NMT_Seq2Seq.py:__ The model file that defines the Sequence to Sequence Model and the beamsearch decoding process.
+
 __train.py:__ This script defines how we apply backpropagration to optimize the network. 
 
-__layers/:__ Under this directory, we have defined the encoder and decoder structure and attention mechanism. 
+__layers/:__ Under this directory, we have defined the encoder and decoder structure and attention mechanism.
+
 __evaluation/:__ Under this repository we have a BLEU score computation python script from [Google Neural Machine Translation Tutorial](https://github.com/tensorflow/nmt).
 ## 4. Prepare Dataset
 We have a preprocessed IWLST 2015 EN -> VI dataset avaible in this [google drive link](https://drive.google.com/drive/folders/1DvnSJO4sFVspox4e8rWVZdRMb0s40HZb?usp=sharing), which can be downloaded to train the model. 
