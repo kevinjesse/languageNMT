@@ -39,10 +39,6 @@ source activate pytorch-py3
 ```
 Once you have launched the virtual environment, you can start to run our code. To train our model, you will need to run the file "main.py" with the following command:
 ```
-	python main.py --data_path path/to/data --trained_model_path /path/to/save/model --sr en --tg de
+python main.py --data_path path/to/data --trained_model_path /path/to/save/model --sr en --tg de
 ```
-You need to define at least four things in order to run this code: the directory for the dataset, the directory to save the trained model, the source language, and the target language.
-
-### Things TODO before Submission
-3. Add more comments to the code so that the code can be easier understaood
-4. Include the results evaluated on the dataset here.
+You need to define at least four things in order to run this code: the directory for the dataset, the directory to save the trained model, the source language, and the target language. You can also set other parameters, for example batch size by using the "--batch_size" flag. For a list of parameters that you can set, please refer to the beginning of the main.py
